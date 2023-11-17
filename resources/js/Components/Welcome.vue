@@ -13,7 +13,7 @@ import presentation from '@/assets/videos/presentation fast.mp4'
             </h1>
 
             <video autoplay loop :src=presentation class="mt-6 text-gray-500 leading-relaxed rounded-2xl"></video>
-            <div class="text-left mt-2 font-semibold">
+            <div class="text-justify mt-2 font-semibold">
                 Nous avons pour mission de construire des partenariatsfiables et durables basés sur la confiance mutuelle, en offrant une gamme diversifiée de services avec chaque entreprise. Offrir une expérience professionnelle inoubliable dans les projets de nos partenaires.Notre objectif principal est de contribuer à l'économie nationale, dans les ressources humaines. Dans ce contexte, nous organisons un emploi convenable pour les personnes qualifiées, semi-qualifiées et travailleurs non qualifiés à travers la migration dans différents pays du monde et les rendres autonomes en apportant leur bien-être économique.
             </div>
         </div>

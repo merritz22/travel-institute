@@ -49,7 +49,10 @@ const year = new Date().getFullYear()
                             <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Programmes</h2>
 
                             <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nesciunt veritatis tempora aliquam porro voluptas tenetur assumenda cumque? Inventore voluptatibus esse facilis similique doloremque adipisci quis beatae asperiores ea quia.
+                                La nouvelle plateforme de réservation en ligne permet aux clients de rechercher des voyages en fonction de leurs critères, tels que le budget, la durée du voyage ou les activités souhaitées. Elle permet également aux clients de créer des alertes pour être informés des offres spéciales.
+Les nouveaux partenariats avec des compagnies aériennes, des hôtels et des voyagistes permettent à Travel Institute de proposer des offres plus attractives, telles que des réductions sur les vols ou les séjours.
+Les nouvelles formations pour les professionnels du voyage couvrent des sujets tels que la vente de voyages en ligne, la gestion de la relation client ou la négociation de prix.
+Les voyages sur mesure pour des destinations de niche sont conçus pour répondre aux besoins spécifiques des clients. Ils peuvent inclure des activités telles que la randonnée, le yoga ou la découverte de la culture locale.
                             </p>
                         </div>
 
@@ -68,8 +71,23 @@ const year = new Date().getFullYear()
 
                             <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Témoignages</h2>
 
-                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ducimus laborum eveniet, suscipit dolore sit, repellat autem magni doloremque tempore animi. Voluptates quis consectetur magni ducimus doloribus, reiciendis molestiae quas.
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Clients satisfaits</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Un client a témoigné de la qualité de l'accompagnement de son agent de voyages, qui a su le guider dans la réservation de son voyage et répondre à toutes ses questions.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Flexibilité de Travel</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Une cliente a apprécié la flexibilité de l'agence, qui a pu modifier son voyage à la dernière minute en raison d'un changement de programme.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Qualité de service</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Un client a été très satisfait de la qualité des hôtels et des activités proposés par l'agence.
+                                </p>
                             </p>
                         </div>
 
@@ -87,15 +105,37 @@ const year = new Date().getFullYear()
                             </div>
 
                             <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Actualités</h2>
-
-                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, distinctio. Error totam aut perferendis, aliquam eligendi quo dolor placeat similique debitis mollitia quaerat cum expedita, autem consequuntur, ea aperiam qui?
+                            <h2 class="mt-1 text-lg font-semibold text-green-900 dark:text-white">L'agence de voyage Travel Institute a annoncé plusieurs nouveautés pour l'année 2023.</h2>
+                            
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Une nouvelle plateforme de réservation en ligne</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    La première nouveauté est le lancement d'une nouvelle plateforme de réservation en ligne. Cette plateforme est plus intuitive et facile à utiliser, et elle offre une meilleure visibilité sur les offres disponibles
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">De nouveaux partenariats</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute a également annoncé de nouveaux partenariats avec des compagnies aériennes, des hôtels et des voyagistes. Ces partenariats permettront à l'agence de proposer des offres plus attractives à ses clients.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">De nouvelles formations</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute propose également de nouvelles formations pour les professionnels du voyage. Ces formations sont destinées à renforcer les compétences des agents de voyages et à les aider à répondre aux besoins des clients.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Focus sur les destinations de niche</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute continue de mettre l'accent sur les destinations de niche. L'agence propose des voyages sur mesure pour des destinations telles que le Costa Rica, l'Inde ou le Japon.
+                                </p>
                             </p>
                         </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
+                        </svg> -->
                     </a>
 
                     <div class="scale-100 p-6 bg-green-900 rounded-lg shadow-2xl shadow-green-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
@@ -107,9 +147,31 @@ const year = new Date().getFullYear()
                             </div>
 
                             <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Les voyages</h2>
+                            <h2 class="mt-1 text-lg font-semibold text-green-900 dark:text-white">Travel Institute propose une large gamme de voyages, des séjours classiques aux voyages sur mesure. Voici quelques exemples d'opérations de voyages proposées par l'agence.</h2>
 
-                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero autem itaque rerum culpa doloremque dicta, blanditiis quos suscipit nam! Magni alias recusandae assumenda aperiam aliquid, minus quibusdam perspiciatis hic nesciunt.
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Séjours classiques</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute propose des séjours classiques dans des destinations populaires, telles que la France, le Canada, l'Italie... Ces séjours comprennent généralement le transport, l'hébergement et les repas.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Voyages sur mesure</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute propose également des voyages sur mesure, conçus pour répondre aux besoins spécifiques des clients. Ces voyages peuvent inclure des activités telles que les études, la randonnée, le yoga, la découverte de la culture locale ou la participation à des événements sportifs ou culturels.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Voyages d'affaires</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute propose des voyages d'affaires, qui comprennent le transport, l'hébergement, les repas et les services d'un assistant personnel.
+                                </p>
+                            </p>
+                            <p class="mt-4 text-green-500 text-sm leading-relaxed">
+                                <h2 class="text-green-600 font-medium">Voyages de groupes</h2>
+                                <p class=" text-green-400 text-sm leading-relaxed">
+                                    Travel Institute propose des voyages de groupes, qui sont organisés pour des groupes de personnes partageant un intérêt commun. Ces voyages peuvent inclure des activités telles que la randonnée, le yoga, la découverte de la culture locale ou la participation à des événements sportifs ou culturels.
+                                </p>
                             </p>
                         </div>
 
