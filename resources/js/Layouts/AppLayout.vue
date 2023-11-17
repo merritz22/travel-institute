@@ -41,7 +41,7 @@ const logout = () => {
                         <!-- Logo -->
                         <div class="shrink-0 flex items-center">
                             <Link :href="route('dashboard')">
-                                <ApplicationMark class="block h-9 w-auto" />
+                                <ApplicationMark class="block h-24 w-auto rounded-full" />
                             </Link>
                         </div>
                         <div class="flex">
@@ -51,9 +51,6 @@ const logout = () => {
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Accueil
                                 </NavLink>
-                                <NavLink :href="route('about')" :active="route().current('about')">
-                                    A Propos
-                                </NavLink>
                                 <NavLink :href="route('students')" :active="route().current('students')">
                                     Etudiants
                                 </NavLink>
@@ -62,6 +59,9 @@ const logout = () => {
                                 </NavLink>
                                 <NavLink :href="route('admissions')" :active="route().current('admissions')">
                                     Admissions
+                                </NavLink>
+                                <NavLink :href="route('about')" :active="route().current('about')">
+                                    A Propos
                                 </NavLink>
                             </div>
                         </div>
@@ -206,9 +206,6 @@ const logout = () => {
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Accueil
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('about')" :active="route().current('about')">
-                            A Propos
-                        </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('students')" :active="route().current('students')">
                             Etudiants
                         </ResponsiveNavLink>
@@ -217,6 +214,9 @@ const logout = () => {
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('admissions')" :active="route().current('admissions')">
                             Admissions
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('about')" :active="route().current('about')">
+                            A Propos
                         </ResponsiveNavLink>
                     </div>
 

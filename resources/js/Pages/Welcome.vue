@@ -1,5 +1,9 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import ApplicationLogoVue from '@/Components/ApplicationLogo.vue';
+import AuthenticationCardLogo from '@/Components/AuthenticationCardLogo.vue';
+import intro from '@/assets/videos/accueil video two.mp4'
+import intro2 from '@/assets/videos/accueil video.mp4'
 
 defineProps({
     canLogin: Boolean,
@@ -16,31 +20,35 @@ const year = new Date().getFullYear()
 
     <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-center">
         <div v-if="canLogin" class="sm:fixed sm:top-0 sm:end-0 p-6 text-end z-10">
-            <Link v-if="$page.props.auth.user" :href="route('dashboard')" class="font-semibold text-gray-900 hover:text-black focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">Accueil</Link>
+            <Link v-if="$page.props.auth.user" :href="route('dashboard')" class="font-semibold text-green-900 hover:text-black focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">Accueil</Link>
 
             <template v-else>
-                <Link :href="route('login')" class="font-semibold text-gray-900 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">Connexion</Link>
+                <Link :href="route('login')" class="font-semibold text-green-900 hover:text-green-900 dark:text-green-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">Connexion</Link>
 
-                <Link v-if="canRegister" :href="route('register')" class="ms-4 font-semibold text-gray-900 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">S'Enregistrer</Link>
+                <Link v-if="canRegister" :href="route('register')" class="ms-4 font-semibold text-green-900 hover:text-green-900 dark:text-green-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-none">S'Enregistrer</Link>
             </template>
         </div>
 
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
 
             <!-- Le code du logo ici -->
+            <!-- <AuthenticationCardLogo /> -->
+            <div class="w-100 h-fit p-5">
+                <video :src=intro class="mx-auto rounded-lg" autoplay loop></video>
+            </div>
             <div class="mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    <a href="#" class="scale-100 p-6 bg-gray-900 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="/programs" class="scale-100 p-6 bg-green-900 rounded-lg shadow-2xl shadow-green-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
-                            <div class="h-16 w-16 bg-red-800 flex items-center justify-center rounded-full">
+                            <div class="h-16 w-16 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Programmes</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Programmes</h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nesciunt veritatis tempora aliquam porro voluptas tenetur assumenda cumque? Inventore voluptatibus esse facilis similique doloremque adipisci quis beatae asperiores ea quia.
                             </p>
                         </div>
@@ -50,7 +58,7 @@ const year = new Date().getFullYear()
                         </svg>
                     </a>
 
-                    <a href="#" class="scale-100 p-6 bg-gray-900 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="/students" class="scale-100 p-6 bg-green-900 rounded-lg shadow-2xl shadow-green-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
                             <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
@@ -58,9 +66,9 @@ const year = new Date().getFullYear()
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Témoignages</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Témoignages</h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ducimus laborum eveniet, suscipit dolore sit, repellat autem magni doloremque tempore animi. Voluptates quis consectetur magni ducimus doloribus, reiciendis molestiae quas.
                             </p>
                         </div>
@@ -70,7 +78,7 @@ const year = new Date().getFullYear()
                         </svg>
                     </a>
 
-                    <a href="#" class="scale-100 p-6 bg-gray-900 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="#" class="scale-100 p-6 bg-green-900 rounded-lg shadow-2xl shadow-green-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
                             <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
@@ -78,9 +86,9 @@ const year = new Date().getFullYear()
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Actualités</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Actualités</h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, distinctio. Error totam aut perferendis, aliquam eligendi quo dolor placeat similique debitis mollitia quaerat cum expedita, autem consequuntur, ea aperiam qui?
                             </p>
                         </div>
@@ -90,7 +98,7 @@ const year = new Date().getFullYear()
                         </svg>
                     </a>
 
-                    <div class="scale-100 p-6 bg-gray-900 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <div class="scale-100 p-6 bg-green-900 rounded-lg shadow-2xl shadow-green-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
                             <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
@@ -98,25 +106,29 @@ const year = new Date().getFullYear()
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Les voyages</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-green-900 dark:text-white">Les voyages</h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            <p class="mt-4 text-green-500 dark:text-green-400 text-sm leading-relaxed">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero autem itaque rerum culpa doloremque dicta, blanditiis quos suscipit nam! Magni alias recusandae assumenda aperiam aliquid, minus quibusdam perspiciatis hic nesciunt.
                             </p>
                         </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
+                        </svg> -->
                     </div>
                 </div>
             </div>
+            
+            <div class="w-100 h-fit p-5">
+                <video :src=intro2 class="mx-auto rounded-lg" autoplay loop muted></video>
+            </div>
 
             <div class="flex justify-center mt-16 px-6 sm:items-center sm:justify-between">
-                <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-start">
+                <div class="text-center text-sm text-green-500 dark:text-green-400 sm:text-start">
                     <div class="flex items-center gap-4">
-                        <a href="https://mekames.com" class="group inline-flex items-center text-gray-900 font-semibold hover:text-black focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px me-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400">
+                        <a href="https://mekames.com" class="group inline-flex items-center text-green-900 font-semibold hover:text-green-500 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px me-1 w-5 h-5 stroke-green-400 dark:stroke-green-600 group-hover:stroke-green-600 dark:group-hover:stroke-green-400">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
                             @Merritz22
@@ -124,7 +136,7 @@ const year = new Date().getFullYear()
                     </div>
                 </div>
 
-                <div class="ms-4 text-center text-sm text-gray-900 font-semibold hover:text-black sm:text-end sm:ms-0">
+                <div class="ms-4 text-center text-sm text-green-900 font-semibold hover:text-green-500 sm:text-end sm:ms-0">
                     &copy;Copyrigth {{ year }}. <b>Travel Institute and Services SARL</b> tout droits réservés.
                 </div>
             </div>
