@@ -30,8 +30,8 @@ import presentation from '@/assets/videos/about.mp4'
                                 </a>
                             </div>
                             <div class="text-center m-2 p-3 bg-green-500 rounded-lg hover:bg-green-900 transition-all ease-in-out duration-700">
-                                <a href="https://contact@lorondoservices.com" class="hover:underline">
-                                    ceo@travelinstitute.com
+                                <a href="mailto:contactdouala@travelsinstitute.com" class="hover:underline">
+                                    contactdouala@travelsinstitute.com
                                 </a>
                             </div>
                             <div class="text-center m-2 p-3 bg-green-500 rounded-lg hover:bg-green-900 transition-all ease-in-out duration-700">
@@ -40,8 +40,8 @@ import presentation from '@/assets/videos/about.mp4'
                                 </a>
                             </div>
                             <div class="text-center m-2 p-3 bg-green-500 rounded-lg hover:bg-green-900 transition-all ease-in-out duration-700">
-                                <a href="https://contact@lorondoservices.com" class="hover:underline">
-                                    infos@travelinstitute.com
+                                <a href="mailto:contactyaounde@travelsinstitute.com" class="hover:underline">
+                                    contactyaounde@travelsinstitute.com
                                 </a>
                             </div>
                         </div>
