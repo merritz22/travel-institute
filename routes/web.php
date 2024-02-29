@@ -16,17 +16,15 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
+    return Inertia::render('Dashboard', [
+        // 'canLogin' => Route::has('login'),
+        // 'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('dashboard');
 
-Route::get('/admissions', function () {
-    return Inertia::render('Admissions');
-})->name('admissions');
+
 
 Route::get('/programs', function () {
     return Inertia::render('Programs');
@@ -45,7 +43,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    Route::get('/admissions', function () {
+        return Inertia::render('Admissions');
+    })->name('admissions');
 });
