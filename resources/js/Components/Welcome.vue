@@ -1,6 +1,6 @@
 <script setup>
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import presentation from '@/assets/videos/presentation fast.mp4'
+import presentation from '@/assets/travel-logo-princ.jpg'
 </script>
 
 <template>
